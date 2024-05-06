@@ -1,0 +1,752 @@
+[
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 11,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 12,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 3,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 8,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 10,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 12,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 6,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 10,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 11,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 8,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 10,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 11,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 4,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 7,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 10,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Verde",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 8,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 3,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Verde",
+        "numero": 10,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 12,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 11,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 5,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 8,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 8,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 11,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 8,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 9,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Verde",
+        "numero": 3,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 11,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 12,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 8,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 3,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 3,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 9,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 3,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Verde",
+        "numero": 10,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 10,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 12,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 12,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 9,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 11,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Naranja",
+        "numero": 5,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 12,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 9,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 9,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Verde",
+        "numero": 10,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 10,
+        "elemento": "Nieve"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Fuego"
+    },
+    {
+        "color": "Lila",
+        "numero": 10,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Agua"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 12,
+        "elemento": "Fuego"
+    }
+]
