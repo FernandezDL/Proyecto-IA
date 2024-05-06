@@ -17,8 +17,7 @@ def cargar_cartas():
         return [Carta(**datos) for datos in cartas_data]
 
 def asignar_cartas(cartas):
-    """ Asignar cartas aleatoriamente a dos jugadores asegurando que no haya duplicados en cada set """
-    random.shuffle(cartas)  # Mezclar todas las cartas para asegurar aleatoriedad
-    cartas_user = cartas[:30]  # Las primeras 30 cartas para el usuario
-    cartas_ia = cartas[30:60]  # Las siguientes 30 cartas para la IA
+    """ Asignar cartas aleatoriamente a dos jugadores permitiendo duplicados entre sets """
+    cartas_user = random.choices(cartas, k=30)
+    cartas_ia = random.choices(cartas, k=30)
     return cartas_user, cartas_ia
