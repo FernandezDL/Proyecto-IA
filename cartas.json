@@ -1,752 +1,1094 @@
 [
     {
-        "color": "Rojo",
-        "numero": 7,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 4,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 11,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 12,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
         "color": "Azul",
         "numero": 3,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 8,
-        "elemento": "Agua"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/0b/CART_SURFER_card_image.png/revision/latest?cb=20150121025008"
     },
     {
         "color": "Verde",
-        "numero": 5,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Lila",
-        "numero": 10,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 12,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Lila",
-        "numero": 11,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Verde",
-        "numero": 6,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 4,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 10,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Verde",
-        "numero": 4,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 5,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Lila",
-        "numero": 6,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 12,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 11,
-        "elemento": "Nieve"
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b2/COFFEE_SHOP_card_image.png/revision/latest?cb=20150123213646"
     },
     {
         "color": "Lila",
         "numero": 8,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 12,
-        "elemento": "Fuego"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/22/ASTRO_BARRIER_card_image.png/revision/latest?cb=20150123213647"
     },
     {
         "color": "Naranja",
-        "numero": 11,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 5,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 10,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 11,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Lila",
-        "numero": 4,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 7,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Lila",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 10,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 5,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 4,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Verde",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 4,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 8,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 6,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Lila",
-        "numero": 11,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 12,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
         "numero": 3,
-        "elemento": "Nieve"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/3d/HOT_CHOCOLATE_card_image.png/revision/latest?cb=20150123213647"
     },
     {
         "color": "Lila",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d2/LANDING_PAD_card_image.png/revision/latest?cb=20150123213647"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/57/PIZZA_CHEF_card_image.png/revision/latest?cb=20150123213648"
+    },
+    {
+        "color": "Rojo",
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b5/PAINT_BY_LETTERS_card_image.png/revision/latest?cb=20150806164936"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/30/MINE_card_image.png/revision/latest?cb=20150123213648"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a5/CONSTRUCTION_WORKER_card_image.png/revision/latest?cb=20150123220534"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/13/JET_PACK_ADVENTURE_card_image.png/revision/latest?cb=20150123220536"
+    },
+    {
+        "color": "Azul",
         "numero": 3,
-        "elemento": "Nieve"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f2/GIFT_SHOP_card_image.png/revision/latest?cb=20150123220535"
     },
     {
         "color": "Verde",
-        "numero": 10,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 12,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 5,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 4,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 4,
-        "elemento": "Fuego"
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/72/HIKING_IN_THE_FOREST_card_image.png/revision/latest?cb=20150123220536"
     },
     {
         "color": "Verde",
         "numero": 5,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 11,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 6,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 11,
-        "elemento": "Agua"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a6/RESCUE_SQUAD_card_image.png/revision/latest?cb=20150123220537"
     },
     {
         "color": "Naranja",
-        "numero": 5,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 8,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 7,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 8,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Verde",
-        "numero": 5,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 11,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Lila",
-        "numero": 11,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 8,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 4,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 9,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 8,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Verde",
         "numero": 3,
-        "elemento": "Agua"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b3/PET_SHOP_card_image.png/revision/latest?cb=20150123220538"
     },
     {
         "color": "Lila",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Verde",
         "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 12,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 11,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 6,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Naranja",
-        "numero": 12,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 4,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 4,
-        "elemento": "Fuego"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c3/SKI_VILLAGE_card_image.png/revision/latest?cb=20150806165004"
     },
     {
         "color": "Lila",
         "numero": 8,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Agua"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f4/ICE_HOCKEY_card_image.png/revision/latest?cb=20150123224012"
     },
     {
         "color": "Rojo",
-        "numero": 12,
-        "elemento": "Nieve"
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c1/SKI_HILL_card_image.png/revision/latest?cb=20150123224012"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f5/SNOWBALL_FIGHT_card_image.png/revision/latest?cb=20150123224013"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/13/SNOW_FORTS_card_image.png/revision/latest?cb=20150123224013"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/97/SOCCER_card_image.png/revision/latest?cb=20150123224014"
     },
     {
         "color": "Azul",
-        "numero": 6,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
         "numero": 3,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 3,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 9,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Verde",
-        "numero": 3,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 6,
-        "elemento": "Agua"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/77/BEACH_card_image.png/revision/latest?cb=20150123224014"
     },
     {
         "color": "Azul",
         "numero": 5,
-        "elemento": "Agua"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/1a/FOOTBALL_card_image.png/revision/latest?cb=20150123224014"
     },
     {
         "color": "Verde",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Rojo",
-        "numero": 9,
-        "elemento": "Fuego"
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f0/BASEBALL_card_image.png/revision/latest?cb=20150123224015"
     },
     {
         "color": "Verde",
         "numero": 8,
-        "elemento": "Nieve"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/52/EMERALD_PRINCESS_card_image.png/revision/latest?cb=20150123224015"
     },
     {
-        "color": "Azul",
-        "numero": 7,
-        "elemento": "Nieve"
+        "color": "Naranja",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/6b/BEAN_COUNTERS_card_image.png/revision/latest?cb=20150123224016"
     },
     {
-        "color": "Azul",
+        "color": "Lila",
         "numero": 4,
-        "elemento": "Agua"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/e8/MANHOLE_COVER_card_image.png/revision/latest?cb=20150123224059"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2a/NEWSPAPER_ARCHIVES_card_image.png/revision/latest?cb=20150123234950"
+    },
+    {
+        "color": "Rojo",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/aa/UNDERGROUND_POOL_card_image.png/revision/latest?cb=20150123234951"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/7b/SCUBA_DIVING_card_image.png/revision/latest?cb=20150123234951"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/21/ICE_FISHING_card_image.png/revision/latest?cb=20150123234951"
+    },
+    {
+        "color": "Azul",
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/06/CASE_OF_THE_MISSING_COINS_card_image.png/revision/latest?cb=20150123234952"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c4/CRATES_AND_BOXES_card_image.png/revision/latest?cb=20150123234952"
     },
     {
         "color": "Verde",
-        "numero": 10,
-        "elemento": "Nieve"
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a7/ANVIL_SMITH_card_image.png/revision/latest?cb=20150123234953"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b5/HALLOWEEN_card_image.png/revision/latest?cb=20150123234956"
+    },
+    {
+        "color": "Lila",
+        "numero": 3,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b8/KNIGHT_card_image.png/revision/latest?cb=20150123234956"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/73/BLACK_PUFFLE_card_image.png/revision/latest?cb=20150123234954"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/98/MEDIEVAL_PARTY_card_image.png/revision/latest?cb=20150123234956"
     },
     {
         "color": "Azul",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 10,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Lila",
-        "numero": 5,
-        "elemento": "Nieve"
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/ba/BLUE_PUFFLE_card_image.png/revision/latest?cb=20150123234955"
     },
     {
         "color": "Azul",
         "numero": 5,
-        "elemento": "Fuego"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/6c/PINK_PUFFLE_card_image.png/revision/latest?cb=20150123234957"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/1a/GREEN_PUFFLE_card_image.png/revision/latest?cb=20150123234955"
     },
     {
         "color": "Naranja",
-        "numero": 12,
-        "elemento": "Agua"
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/8b/PUFFLE_FURNITURE_card_image.png/revision/latest?cb=20150123234954"
     },
     {
         "color": "Lila",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c5/PURPLE_PUFFLE_card_image.png/revision/latest?cb=20150124001549"
+    },
+    {
+        "color": "Rojo",
         "numero": 5,
-        "elemento": "Nieve"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2c/RED_PUFFLE_card_image.png/revision/latest?cb=20150123234954"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/42/YELLOW_PUFFLE_card_image.png/revision/latest?cb=20150123234953"
+    },
+    {
+        "color": "Azul",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/9a/SUMMER_PARTY_card_image.png/revision/latest?cb=20150123234957"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d9/GRAY_FISH_card_image.png/revision/latest?cb=20150124012242"
     },
     {
         "color": "Naranja",
         "numero": 6,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Naranja",
-        "numero": 7,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Rojo",
-        "numero": 7,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Rojo",
-        "numero": 12,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Naranja",
-        "numero": 6,
-        "elemento": "Fuego"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/48/O_BERRY_card_image.png/revision/latest?cb=20150124012245"
     },
     {
         "color": "Lila",
-        "numero": 6,
-        "elemento": "Fuego"
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/4b/LIFE_RING_card_image.png/revision/latest?cb=20150124012244"
     },
     {
-        "color": "Lila",
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/62/JOLLY_ROGER_FLAG_card_image.png/revision/latest?cb=20150124012243"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/ec/COINS_card_image.png/revision/latest?cb=20150129002300"
+    },
+    {
+        "color": "Azul",
         "numero": 6,
-        "elemento": "Agua"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/ed/GARY_THE_GADGET_GUY_card_image.png/revision/latest?cb=20150124012242"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2b/BUOYS_card_image.png/revision/latest?cb=20150124012240"
     },
     {
         "color": "Naranja",
-        "numero": 7,
-        "elemento": "Agua"
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/61/YARR_card_image.png/revision/latest?cb=20150124012245"
+    },
+    {
+        "color": "Lila",
+        "numero": 8,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/e0/KLUTZY_card_image.png/revision/latest?cb=20150124012244"
     },
     {
         "color": "Rojo",
         "numero": 3,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Verde",
-        "numero": 9,
-        "elemento": "Nieve"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a6/HERBERT_P._BEAR_card_image.png/revision/latest?cb=20150124012242"
     },
     {
         "color": "Amarillo",
-        "numero": 5,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 11,
-        "elemento": "Agua"
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2b/HOT_SAUCE_card_image.png/revision/latest?cb=20150124012243"
     },
     {
         "color": "Azul",
         "numero": 6,
-        "elemento": "Nieve"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/bb/SNOW_CASTLE_card_image.png/revision/latest?cb=20150124012245"
+    },
+    {
+        "color": "Verde",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/21/AUNT_ARCTIC_card_image.png/revision/latest?cb=20150124012239"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/92/CHRISTMAS_CAROLS_card_image.png/revision/latest?cb=20150124012241"
+    },
+    {
+        "color": "Naranja",
+        "numero": 8,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/8b/BETA_PARTY_card_image.png/revision/latest?cb=20150124012240"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/eb/HIDDEN_ITEMS_card_image.png/revision/latest?cb=20150124021212"
     },
     {
         "color": "Rojo",
         "numero": 3,
-        "elemento": "Agua"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/9a/SECRET_AGENT_card_image.png/revision/latest?cb=20150124021213"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f5/SNOW_SHOVEL_card_image.png/revision/latest?cb=20150124021214"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/7b/THE_MIGRATOR_card_image.png/revision/latest?cb=20150124021214"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f4/CAPTAIN_ROCKHOPPER_card_image.png/revision/latest?cb=20150124021211"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/ff/ICE_CREAM_card_image.png/revision/latest?cb=20150124021212"
+    },
+    {
+        "color": "Lila",
+        "numero": 8,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/46/MULLET_card_image.png/revision/latest?cb=20150124021212"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/8f/UNDERGROUND_FLOOD_card_image.png/revision/latest?cb=20150124021214"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/1e/FLUFFY_THE_FISH_card_image.png/revision/latest?cb=20150124021211"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a3/SHARK_card_image.png/revision/latest?cb=20150124021213"
+    },
+    {
+        "color": "Rojo",
+        "numero": 8,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/47/BLAST_card_image.png/revision/latest?cb=20150124235049"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/3f/FLARE_card_image.png/revision/latest?cb=20150124235049"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b0/CHIRP_card_image.png/revision/latest?cb=20150124235050"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/4f/POP_card_image.png/revision/latest?cb=20150124235229"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/91/LOOP_card_image.png/revision/latest?cb=20150124235051"
+    },
+    {
+        "color": "Verde",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c0/FLIT_card_image.png/revision/latest?cb=20150124235051"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b2/BOUNCER_card_image.png/revision/latest?cb=20150124235052"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b9/ED_MCCOOL_AND_DESTRUCTO_card_image.png/revision/latest?cb=20150124235052"
+    },
+    {
+        "color": "Verde",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/17/NIBLET_card_image.png/revision/latest?cb=20150124235053"
+    },
+    {
+        "color": "Lila",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/ce/SNOWY_NIGHT_card_image.png/revision/latest?cb=20150124235053"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/47/PUFFLES_ON_THE_LOOSE_card_image.png/revision/latest?cb=20150124235054"
+    },
+    {
+        "color": "Verde",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/19/CADENCE_AND_THE_KEEPER_card_image.png/revision/latest?cb=20150124235054"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b8/GOLDEN_PUFFLE_card_image.png/revision/latest?cb=20150124235055"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d4/METEOR_PUFFLE_card_image.png/revision/latest?cb=20150124235055"
+    },
+    {
+        "color": "Lila",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/88/RAINBOW_PUFFLE_card_image.png/revision/latest?cb=20150124235056"
+    },
+    {
+        "color": "Naranja",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/e6/ABOMINABLE_SNOW_PUFFLE_card_image.png/revision/latest?cb=20150124235056"
+    },
+    {
+        "color": "Azul",
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/57/Club_Penguin_Times_card_image.png/revision/latest?cb=20150125012812"
+    },
+    {
+        "color": "Azul",
+        "numero": 3,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d9/Can_of_Worms_card_image.png/revision/latest?cb=20150125012812"
+    },
+    {
+        "color": "Lila",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/09/Winter_Fiesta_Party_card_image.png/revision/latest?cb=20150125012813"
+    },
+    {
+        "color": "Naranja",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b4/Invisible_Ninja_Suit_card_image.png/revision/latest?cb=20150125012813"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/0d/Penguin_Mail_card_image.png/revision/latest?cb=20150125012814"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/ba/Bumble_Bee_card_image.png/revision/latest?cb=20150125012814"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/fd/Pizzatron_3000_card_image.png/revision/latest?cb=20150125012815"
+    },
+    {
+        "color": "Rojo",
+        "numero": 8,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/06/Card-Jitsu_card_image.png/revision/latest?cb=20150125012815"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/fb/Adopt-A-Puffle_card_image.png/revision/latest?cb=20150125012816"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/bd/Rock_%26_Roll_Suit_card_image.png/revision/latest?cb=20150125012816"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/11/Construction_card_image.png/revision/latest?cb=20150125012817"
+    },
+    {
+        "color": "Verde",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/58/Hidden_Pins_card_image.png/revision/latest?cb=20150125012817"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/01/Treasure_Hunt_Game_card_image.png/revision/latest?cb=20150125012817"
+    },
+    {
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/dc/DJ3K_card_image.png/revision/latest?cb=20150125012818"
+    },
+    {
+        "color": "Verde",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/ff/Surf_Boards_card_image.png/revision/latest?cb=20150125012819"
+    },
+    {
+        "color": "Verde",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/ef/Beach_Chair_Chilling_card_image.png/revision/latest?cb=20150125012819"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/56/Telescope_card_image.png/revision/latest?cb=20150125012819"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a7/Fish_Costume_card_image.png/revision/latest?cb=20150125012820"
+    },
+    {
+        "color": "Naranja",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/51/Crow%27s_Nest_card_image.png/revision/latest?cb=20150125012820"
+    },
+    {
+        "color": "Azul",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/3c/The_Cove_card_image.png/revision/latest?cb=20150125012821"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/9c/Captain%27s_Quarters_card_image.png/revision/latest?cb=20150125021823"
+    },
+    {
+        "color": "Azul",
+        "numero": 8,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f6/Iceberg_card_image.png/revision/latest?cb=20150125021825"
+    },
+    {
+        "color": "Lila",
+        "numero": 3,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/5d/The_Lounge_card_image.png/revision/latest?cb=20150125021833"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/00/Rockhopper%27s_Key_card_image.png/revision/latest?cb=20150125021830"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/6a/Penguins_That_Time_Forgot_card_image_%28ID_225%29.png/revision/latest?cb=20150125021827"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f8/Team_Blue_Rally_card_image.png/revision/latest?cb=20150125021832"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/ee/Jet_Pack_Adventure_card_image.png/revision/latest?cb=20150125021826"
+    },
+    {
+        "color": "Rojo",
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/53/Ruby_and_the_Ruby_card_image.png/revision/latest?cb=20150125021831"
+    },
+    {
+        "color": "Naranja",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/57/Snowball_Fight_card_image.png/revision/latest?cb=20150125021831"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2c/Snowball_Press_card_image.png/revision/latest?cb=20150125021832"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/0b/Music_Jam_card_image_%28ID_231%29.png/revision/latest?cb=20150125021826"
+    },
+    {
+        "color": "Verde",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/bc/Puffle_Chew-Chew_card_image.png/revision/latest?cb=20150125021829"
+    },
+    {
+        "color": "Verde",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/dd/Fairy_Fables_card_image_%28ID_233%29.png/revision/latest?cb=20150125021823"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/3d/Jelly_Fish_card_image.png/revision/latest?cb=20150125021825"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2d/Pirate_card_image.png/revision/latest?cb=20150125021829"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/62/Fish_Bait_card_image.png/revision/latest?cb=20150125021824"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/52/Hydro_Hopper_card_image_%28ID_237%29.png/revision/latest?cb=20150125021825"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/59/Puffle_O%27s_card_image.png/revision/latest?cb=20150125021830"
+    },
+    {
+        "color": "Lila",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/56/Fall_Fair_Games_card_image.png/revision/latest?cb=20150125021824"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/39/Thinga-ma-jig_3000_card_image.png/revision/latest?cb=20150125021833"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/49/Rad_Scientist_card_image.png/revision/latest?cb=20150125182701"
+    },
+    {
+        "color": "Azul",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/fc/Quip_and_Qua_card_image.png/revision/latest?cb=20150125182701"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d8/Twee_card_image.png/revision/latest?cb=20150125182702"
+    },
+    {
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/9b/Coins_For_Change_card_image.png/revision/latest?cb=20150125182657"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/bb/Surfing_with_the_Sharks_card_image.png/revision/latest?cb=20150125182702"
+    },
+    {
+        "color": "Lila",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/14/Dance_Contest_card_image_%28ID_246%29.png/revision/latest?cb=20150125182657"
     },
     {
         "color": "Lila",
         "numero": 7,
-        "elemento": "Fuego"
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/5a/Purple_Octopus_card_image.png/revision/latest?cb=20150125182700"
+    },
+    {
+        "color": "Azul",
+        "numero": 8,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/92/Giant_Squid_card_image.png/revision/latest?cb=20150125182659"
     },
     {
         "color": "Naranja",
-        "numero": 5,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Lila",
-        "numero": 6,
-        "elemento": "Agua"
+        "numero": 2,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/7e/Camera_card_image.png/revision/latest?cb=20150125215639"
     },
     {
         "color": "Azul",
-        "numero": 4,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 12,
-        "elemento": "Agua"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Fuego"
-    },
-    {
-        "color": "Amarillo",
-        "numero": 9,
-        "elemento": "Nieve"
-    },
-    {
-        "color": "Azul",
-        "numero": 9,
-        "elemento": "Nieve"
+        "numero": 3,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/16/Wigs_card_image.png/revision/latest?cb=20150125215656"
     },
     {
         "color": "Rojo",
         "numero": 4,
-        "elemento": "Fuego"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/0d/Pizza_Parlor_card_image.png/revision/latest?cb=20150125215647"
+    },
+    {
+        "color": "Naranja",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/22/Coffee_Machine_card_image.png/revision/latest?cb=20150125215640"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/68/Costume_Trunk_card_image.png/revision/latest?cb=20150125215642"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/7/77/Pet_Shop_Staff_card_image.png/revision/latest?cb=20150125215646"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/31/Stompin%27_Bob_card_image.png/revision/latest?cb=20150125215654"
+    },
+    {
+        "color": "Rojo",
+        "numero": 8,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/0/0a/G_Billy_card_image.png/revision/latest?cb=20150125215644"
+    },
+    {
+        "color": "Azul",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/51/Outdoor_Igloo_card_image.png/revision/latest?cb=20150125215645"
+    },
+    {
+        "color": "Naranja",
+        "numero": 4,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/cd/Ticket_Booth_card_image.png/revision/latest?cb=20150125215655"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d5/Ridge_Run_card_image.png/revision/latest?cb=20150125215648"
     },
     {
         "color": "Verde",
-        "numero": 10,
-        "elemento": "Nieve"
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/4/4e/Clock_Tower_card_image.png/revision/latest?cb=20150125215640"
     },
     {
-        "color": "Lila",
-        "numero": 6,
-        "elemento": "Agua"
+        "color": "Amarillo",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b2/White_Puffles_card_image.png/revision/latest?cb=20150125215655"
+    },
+    {
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/58/Dojo_Courtyard_card_image.png/revision/latest?cb=20150125215643"
+    },
+    {
+        "color": "Verde",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/90/Rocking_Horse_card_image.png/revision/latest?cb=20150125215649"
+    },
+    {
+        "color": "Verde",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/29/Penguin_Style_card_image.png/revision/latest?cb=20150125215646"
     },
     {
         "color": "Rojo",
         "numero": 4,
-        "elemento": "Agua"
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/9/9b/Stage_Director_card_image.png/revision/latest?cb=20150125215649"
     },
     {
-        "color": "Lila",
-        "numero": 6,
-        "elemento": "Agua"
+        "color": "Amarillo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/f0/Conductor_card_image.png/revision/latest?cb=20150125215641"
     },
     {
         "color": "Naranja",
-        "numero": 10,
-        "elemento": "Nieve"
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/81/Beacon_card_image.png/revision/latest?cb=20150125215639"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/f/ff/Discovering_The_Underground_card_image.png/revision/latest?cb=20150125215820"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/35/Franky_card_image.png/revision/latest?cb=20150125223641"
+    },
+    {
+        "color": "Azul",
+        "numero": 8,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/57/Petey_K._card_image.png/revision/latest?cb=20150125223643"
+    },
+    {
+        "color": "Lila",
+        "numero": 3,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/ce/Boombox_card_image.png/revision/latest?cb=20150125223637"
+    },
+    {
+        "color": "Verde",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/3/33/Mild_Mannered_Reporter_card_image.png/revision/latest?cb=20150125223641"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/85/The_Twelfth_Fish_card_image.png/revision/latest?cb=20150125223645"
+    },
+    {
+        "color": "Naranja",
+        "numero": 6,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/cc/April_Fool%27s_Day_Party_card_image.png/revision/latest?cb=20150125223637"
+    },
+    {
+        "color": "Rojo",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c7/Plasma_Glow_Wave_card_image.png/revision/latest?cb=20150125223643"
+    },
+    {
+        "color": "Rojo",
+        "numero": 2,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/bf/Cowbell_card_image.png/revision/latest?cb=20150125223640"
+    },
+    {
+        "color": "Naranja",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/1/16/O_Berry_Bush_card_image.png/revision/latest?cb=20150125223642"
+    },
+    {
+        "color": "Rojo",
+        "numero": 3,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/81/Chester_The_Time_Traveler_card_image.png/revision/latest?cb=20150125223638"
+    },
+    {
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d7/101_Days_of_Fun_card_image.png/revision/latest?cb=20150125223635"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/6/6d/Color_Vote_card_image.png/revision/latest?cb=20150125223639"
+    },
+    {
+        "color": "Verde",
+        "numero": 7,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/aa/Christmas_Party_card_image.png/revision/latest?cb=20150125223638"
+    },
+    {
+        "color": "Verde",
+        "numero": 2,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a8/Viking_Opera_card_image.png/revision/latest?cb=20150125223647"
+    },
+    {
+        "color": "Amarillo",
+        "numero": 3,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/5/5a/Water_Balloons_card_image.png/revision/latest?cb=20150125223647"
+    },
+    {
+        "color": "Rojo",
+        "numero": 4,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/e8/Tuba_card_image.png/revision/latest?cb=20150125223645"
+    },
+    {
+        "color": "Lila",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/be/Rockhopper%27s_Plants_card_image.png/revision/latest?cb=20150125223644"
+    },
+    {
+        "color": "Azul",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c0/Adventure_Party_card_image.png/revision/latest?cb=20150125223636"
+    },
+    {
+        "color": "Naranja",
+        "numero": 7,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/8/8c/Penguin_Play_Awards_card_image_%28ID_339%29.png/revision/latest?cb=20150125223642"
+    },
+    {
+        "color": "Lila",
+        "numero": 4,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/e/e8/All-Access_Pass_card_image.png/revision/latest?cb=20150125223636"
+    },
+    {
+        "color": "Verde",
+        "numero": 5,
+        "elemento": "Fuego",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/db/Cadence%27s_Autograph_card_image.png/revision/latest?cb=20150126021724"
     },
     {
         "color": "Azul",
         "numero": 5,
-        "elemento": "Fuego"
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b9/Treasure_Book_card_image.png/revision/latest?cb=20150126021910"
     },
     {
         "color": "Lila",
-        "numero": 10,
-        "elemento": "Agua"
+        "numero": 6,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/2/2e/Black_Hoodie_card_image.png/revision/latest?cb=20150126021723"
     },
     {
-        "color": "Naranja",
-        "numero": 4,
-        "elemento": "Agua"
+        "color": "Verde",
+        "numero": 8,
+        "elemento": "Nieve",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/a/a8/Propellor_Cap_card_image.png/revision/latest?cb=20150126021729"
     },
     {
-        "color": "Amarillo",
-        "numero": 12,
-        "elemento": "Fuego"
+        "color": "Rojo",
+        "numero": 5,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b3/Dessert_Pizza_card_image.png/revision/latest?cb=20150126021726"
+    },
+    {
+        "color": "Rojo",
+        "numero": 6,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/c/c6/Black_Electric_Guitar_card_image.png/revision/latest?cb=20150126021722"
+    },
+    {
+        "color": "Lila",
+        "numero": 7,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/df/Mastering_The_Elements_card_image.png/revision/latest?cb=20150126021729"
+    },
+    {
+        "color": "Azul",
+        "numero": 8,
+        "elemento": "Agua",
+        "image": "https://vignette.wikia.nocookie.net/clubpenguin/images/d/d9/Elite_Penguin_Force_card_image_%28ID_348%29.png/revision/latest?cb=20150126021727"
     }
 ]

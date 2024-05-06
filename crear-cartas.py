@@ -1,28 +1,19 @@
 import json
-import random
+from cards import cards  # Asegúrate de que el archivo cards.py esté en el mismo directorio que este script
 
-class Carta:
-    colores = ['Azul', 'Verde', 'Naranja', 'Lila', 'Rojo', 'Amarillo']
-    elementos = ['Fuego', 'Agua', 'Nieve']
-    numeros = [3] + [4, 5, 6, 7, 8, 9]*2 + [10, 11, 12] 
+# Convertir el diccionario de cartas al formato deseado
+new_cards = []
+for card_id, card_info in cards.items():
+    new_card = {
+        "color": card_info['colour'].capitalize(),  # Cambia el color a mayúscula inicial
+        "numero": card_info['power'],
+        "elemento": card_info['element'].capitalize(),  # Cambia el elemento a mayúscula inicial
+        "image" : card_info['image']
+    }
+    new_cards.append(new_card)
 
-    def __init__(self):
-        self.color = random.choice(Carta.colores)
-        self.numero = random.choice(Carta.numeros)
-        self.elemento = random.choice(Carta.elementos)
+# Guardar el nuevo diccionario en un archivo JSON
+with open('cartas.json', 'w') as json_file:
+    json.dump(new_cards, json_file, indent=4)
 
-    def __repr__(self):
-        return f'Carta(Color: {self.color}, Número: {self.numero}, Elemento: {self.elemento})'
-
-def crear_cartas(n):
-    return [Carta() for _ in range(n)]
-
-n = 150  
-cartas = crear_cartas(n)
-
-cartas_json = json.dumps([{'color': carta.color, 'numero': carta.numero, 'elemento': carta.elemento} for carta in cartas], indent=4)
-
-with open('cartas.json', 'w') as archivo:
-    archivo.write(cartas_json)
-
-
+print("El archivo JSON ha sido creado exitosamente.")
