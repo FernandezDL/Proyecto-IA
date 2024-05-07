@@ -57,10 +57,10 @@ def mostrar_victorias(victorias):
             print(f"  {elemento.capitalize()}: {colores}")
 
 def main():
-    cartas = cargar_cartas()
-    cartas_user, cartas_ia = asignar_cartas(cartas)
-    mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
-    mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
+    # cartas = cargar_cartas()
+    # cartas_user, cartas_ia = asignar_cartas(cartas)
+    # mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
+    # mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
 
     victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
     turno = 0
