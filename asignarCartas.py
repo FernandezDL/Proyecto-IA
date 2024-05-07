@@ -2,10 +2,11 @@ import json
 import random
 
 class Carta:
-    def __init__(self, color, numero, elemento):
+    def __init__(self, color, numero, elemento, image):
         self.color = color
         self.numero = numero
         self.elemento = elemento
+        self.image = image
 
     def __repr__(self):
         return f'Carta(Color: {self.color}, Número: {self.numero}, Elemento: {self.elemento})'
