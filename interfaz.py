@@ -57,11 +57,7 @@ while running:
                     carta_ia = mano_ia.pop(random.randint(0, 4))
                     print(f"IA: {carta_ia}")
 
-                    ganador, victorias= cj.jugar(carta_user, carta_ia)
-
-                    if ganador:
-                        running = False
-                        break
+                    juegoTermiando, ganador, victorias= cj.jugar(carta_user, carta_ia)
 
                     #Actualizar mazos, manos y visuales
                     mazo_ia, mazo_user, mano_ia, mano_user = cj.cambiar_carta(mazo_ia, mazo_user, mano_ia, mano_user)
@@ -71,6 +67,10 @@ while running:
                     iconos= imagenesInterfaz.iconos_victorias()
                     imagenesInterfaz.draw_victories(screen, victorias, iconos, 10, width - 100, 10)  # Ajusta las coordenadas según sea necesario
 
+                    print(juegoTermiando)
+                    if juegoTermiando:
+                        imagenesInterfaz.mostrar_mensaje_ganador(screen, ganador, width, height)
+                        running = False
 
     imagenesInterfaz.draw_cards(screen, card_images, card_positions)
    

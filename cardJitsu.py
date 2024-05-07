@@ -70,9 +70,9 @@ def jugar(carta_user, carta_ia):
     ganador = verificar_condicion_victoria(victorias)
     if ganador:
         print(f"\n{ganador} ha ganado el juego!")
-        return True, victorias
+        return True, ganador, victorias
 
-    return False, victorias
+    return False, ganador, victorias
 
 def cambiar_carta(mazo_ia, mazo_user, mano_ia, mano_user):
     if mazo_user and mazo_ia:

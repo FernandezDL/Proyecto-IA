@@ -99,7 +99,7 @@ def iconos_victorias():
 
 def draw_victories(screen, victorias, iconos, start_left, start_right, y_start):
     offset = 5  # Espacio entre iconos
-    column_width = 30  # Ancho de cada columna de iconos
+    column_width = 50  # Ancho de cada columna de iconos
 
     # Dibujar victorias de la IA en la esquina superior izquierda
     for idx, elemento in enumerate(['Fuego', 'Agua', 'Nieve']):
@@ -116,3 +116,42 @@ def draw_victories(screen, victorias, iconos, start_left, start_right, y_start):
         for color in victorias['User'][elemento]:
             screen.blit(iconos[elemento][color], (x, y))
             y += iconos[elemento][color].get_height() + offset
+
+def mostrar_mensaje_ganador(screen, ganador, width, height):
+    # Definir visuales
+    color_fondo = (0, 122, 204)
+    color_boton = (255, 255, 255)  
+    fuente = pygame.font.Font(None, 36)
+    fuente_boton = pygame.font.Font(None, 28)
+
+    # rectángulos
+    rect_fondo = pygame.Rect(width // 2 - 150, height // 2 - 60, 300, 120)
+    rect_boton = pygame.Rect(width // 2 - 50, height // 2 + 10, 100, 40)
+    
+    # Dibujar fondo y botón
+    border_radius = 15
+    pygame.draw.rect(screen, color_fondo, rect_fondo, border_radius=border_radius)
+    pygame.draw.rect(screen, color_boton, rect_boton, border_radius=border_radius)
+
+    # Colocar texto
+    texto = fuente.render(f"{ganador} Wins", True, (255, 255, 255))
+    texto_rect = texto.get_rect(center=(width // 2, height // 2 - 20))
+    texto_boton = fuente_boton.render("OK", True, (0, 0, 0))
+    texto_boton_rect = texto_boton.get_rect(center=(width // 2, height // 2 + 30))
+    
+    screen.blit(texto, texto_rect)
+    screen.blit(texto_boton, texto_boton_rect)
+    pygame.display.flip()
+
+    # Esperar a que el usuario presione el botón OK
+    waiting_for_key = True
+    while waiting_for_key:
+        for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                mouse_x, mouse_y = event.pos
+                if rect_boton.collidepoint(mouse_x, mouse_y):
+                    waiting_for_key = False
+            if event.type == pygame.QUIT:
+                waiting_for_key = False
+                pygame.quit()
+                return
