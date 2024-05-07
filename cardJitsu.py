@@ -1,6 +1,8 @@
 from asignarCartas import cargar_cartas, asignar_cartas
 import random
 
+victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
+
 def seleccionar_cartas_mano(mazo):
     """Selecciona 5 cartas aleatorias para la mano inicial y las elimina del mazo."""
     mano = random.sample(mazo, 5)
@@ -56,42 +58,24 @@ def mostrar_victorias(victorias):
         for elemento, colores in elementos.items():
             print(f"  {elemento.capitalize()}: {colores}")
 
-def main():
-    # cartas = cargar_cartas()
-    # cartas_user, cartas_ia = asignar_cartas(cartas)
-    # mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
-    # mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
+def jugar(carta_user, carta_ia):
+    resultado = determinar_ganador(carta_user, carta_ia, victorias)
+    if resultado == "Empate":
+        print(resultado)
+    else:
+        print(f"Victoria para: {resultado}")
 
-    victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
-    turno = 0
+    mostrar_victorias(victorias)
 
-    while True:
-        turno += 1
-        print(f"\nTurno {turno}")
-        mostrar_cartas(mano_user)
+    ganador = verificar_condicion_victoria(victorias)
+    if ganador:
+        print(f"\n{ganador} ha ganado el juego!")
+        return True, victorias
 
-        eleccion_user = int(input("Elige una carta (1-5): ")) - 1
-        carta_user = mano_user.pop(eleccion_user)
+    return False, victorias
 
-        eleccion_ia = random.randint(0, 4)
-        carta_ia = mano_ia.pop(eleccion_ia)
-        print(f"\nUsuario: {carta_user}")
-        print(f"IA: {carta_ia}")
-
-        resultado = determinar_ganador(carta_user, carta_ia, victorias)
-        if resultado == "Empate":
-            print(resultado)
-        else:
-            print(f"Victoria para: {resultado}")
-
-        mostrar_victorias(victorias)
-
-        ganador = verificar_condicion_victoria(victorias)
-        if ganador:
-            print(f"\n{ganador} ha ganado el juego!")
-            break
-
-        if mazo_user and mazo_ia:
+def cambiar_carta(mazo_ia, mazo_user, mano_ia, mano_user):
+    if mazo_user and mazo_ia:
             nueva_carta_user = random.choice(mazo_user)
             mazo_user.remove(nueva_carta_user)
             mano_user.append(nueva_carta_user)
@@ -100,5 +84,4 @@ def main():
             mazo_ia.remove(nueva_carta_ia)
             mano_ia.append(nueva_carta_ia)
 
-if __name__ == "__main__":
-    main()
+    return mazo_ia, mazo_user, mano_ia, mano_user

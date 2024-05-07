@@ -1,11 +1,11 @@
 import pygame
-import json
 import requests
 from pygame.locals import *
 import os
-from imagenesInterfaz import cargar_marcos, load_card_images, cargar_elementos
+import imagenesInterfaz
 from asignarCartas import cargar_cartas, asignar_cartas
-from cardJitsu import seleccionar_cartas_mano
+import cardJitsu as cj
+import random
 
 pygame.init()
 
@@ -19,31 +19,26 @@ pygame.display.set_caption('Card-Jitsu')
 background_image_path = os.path.join('images', 'dojo.png')
 background_image = pygame.image.load(background_image_path)
 background_image = pygame.transform.scale(background_image, (width, height))
+screen.blit(background_image, (0, 0))
 
+#Sonido del juego
 sound = pygame.mixer.Sound("music/cardJitsu.mp3")
 # sound.play(-1)
 
+#Selección de cartas
 cartas = cargar_cartas()
 cartas_user, cartas_ia = asignar_cartas(cartas)
-mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
-mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
+mano_user, mazo_user = cj.seleccionar_cartas_mano(cartas_user)
+mano_ia, mazo_ia = cj.seleccionar_cartas_mano(cartas_ia)
 
-#Cartas
-marcos = cargar_marcos(card_size)
-elementos = cargar_elementos(element_size)
-card_images = load_card_images(mano_user, marcos, elementos, card_size)
+#Visuales de las cartas
+marcos = imagenesInterfaz.cargar_marcos(card_size)
+elementos = imagenesInterfaz.cargar_elementos(element_size)
+card_images = imagenesInterfaz.load_card_images(mano_user, marcos, elementos, card_size)
+card_positions = [(50 + i * (card_size[0] + 10), height - card_size[1] - 50) for i in range(len(card_images))]
 
 # Variables de control
 running = True
-
-# Posiciones de las cartas en pantalla
-card_positions = [(50 + i * (card_size[0] + 10), height - card_size[1] - 50) for i in range(len(card_images))]
-
-def draw_cards():
-    screen.blit(background_image, (0, 0))
-    for idx, img in enumerate(card_images):
-        screen.blit(img, card_positions[idx])
-    pygame.display.flip()
 
 # Bucle principal del juego
 while running:
@@ -56,10 +51,28 @@ while running:
             for idx, pos in enumerate(card_positions):
                 rect = pygame.Rect(pos, card_size)
                 if rect.collidepoint(x, y):
-                    print(f"Has seleccionado la carta: {mano_user[idx]}")
-                    # Aquí podrías manejar la lógica para jugar la carta seleccionada
+                    print(f"Has seleccionado la carta: {mano_user[idx]}")   
+                    carta_user= mano_user.pop(idx)
 
-    draw_cards()
+                    carta_ia = mano_ia.pop(random.randint(0, 4))
+                    print(f"IA: {carta_ia}")
+
+                    ganador, victorias= cj.jugar(carta_user, carta_ia)
+
+                    if ganador:
+                        running = False
+                        break
+
+                    #Actualizar mazos, manos y visuales
+                    mazo_ia, mazo_user, mano_ia, mano_user = cj.cambiar_carta(mazo_ia, mazo_user, mano_ia, mano_user)
+                    card_images = imagenesInterfaz.load_card_images(mano_user, marcos, elementos, card_size)
+
+                    #Iconos ganadores
+                    iconos= imagenesInterfaz.iconos_victorias()
+                    imagenesInterfaz.draw_victories(screen, victorias, iconos, 10, width - 100, 10)  # Ajusta las coordenadas según sea necesario
+
+
+    imagenesInterfaz.draw_cards(screen, card_images, card_positions)
    
 # Cerrar Pygame
 pygame.quit()
