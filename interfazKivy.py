@@ -1,42 +1,40 @@
 from kivy.app import App
-from kivy.uix.widget import Widget
-from kivy.core.window import Window
-from kivy.graphics import Rectangle, Color
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.image import Image
-from kivy.uix.button import Button
 from kivy.core.audio import SoundLoader
-import os
+from kivy.clock import Clock
 
-# Configura las dimensiones de la ventana
-Window.size = (800, 600)
-
-class CardJitsuApp(App):
+class CardJitsu(App):
     def build(self):
-        # Crea un widget que será el contenedor principal
-        self.root = Widget()
+        self.layout = FloatLayout()
 
-        # Establece la imagen de fondo
-        with self.root.canvas.before:
-            self.bg = Rectangle(source=os.path.join('images', 'dojo.png'), pos=self.root.pos, size=Window.size)
+        # -------------------- Fondo --------------------
+        bg_image = Image(source='images/dojo.png', allow_stretch=True, keep_ratio=False)
+        self.layout.add_widget(bg_image)
 
-        # Cargar sonido
+        # -------------------- Musica --------------------
         self.sound = SoundLoader.load('music/cardJitsu.mp3')
         if self.sound:
-            self.sound.loop = True  # Hace que el sonido se repita indefinidamente
+            self.sound.loop = True  # Hace que la música se repita continuamente
             self.sound.play()
-        else:
-            print("No se pudo cargar el archivo de sonido.")
 
+        # -------------------- Animacion de los pinguinos --------------------
+        self.img = Image(source='images/pinguinos/pinguinos1.png', allow_stretch=True, keep_ratio=False)
+        self.layout.add_widget(self.img)  # Asegúrate de añadir este widget al layout
 
-        # Cargar cartas y manejar la lógica del juego aquí
-        # ...
+        self.images = [f'images/pinguinos/pinguinos{i}.png' for i in range(1, 8)]
+        self.current_index = 0
 
-        return self.root
+        # Cambio de imagen
+        Clock.schedule_interval(self.next_image, 0.3)
 
-    def on_start(self):
-         # Detener el sonido cuando la aplicación se cierre
-        if self.sound:
-            self.sound.stop()
+        return self.layout
+
+    def next_image(self, dt):
+        self.current_index = (self.current_index + 1) % len(self.images)
+        
+        # Cambiar la imagen
+        self.img.source = self.images[self.current_index]
 
 if __name__ == '__main__':
-    CardJitsuApp().run()
+    CardJitsu().run()
