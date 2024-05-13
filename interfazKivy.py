@@ -19,6 +19,7 @@ class CardJitsuApp(App):
         with self.root.canvas.before:
             self.bg = Rectangle(source=os.path.join('images', 'dojo.png'), pos=self.root.pos, size=Window.size)
 
+        print("probando")
         # Cargar sonido
         self.sound = SoundLoader.load('music/cardJitsu.mp3')
         if self.sound:
