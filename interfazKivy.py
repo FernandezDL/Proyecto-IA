@@ -41,7 +41,7 @@ class CartaImage(ButtonBehavior, RelativeLayout):
         self.add_widget(self.elemento_img)
 
     def on_press(self):
-        print(f'Carta: Color={self.carta.color}, Número={self.carta.numero}, Elemento={self.carta.elemento}')
+        # print(f'Carta: Color={self.carta.color}, Número={self.carta.numero}, Elemento={self.carta.elemento}')
         self.app.carta_seleccionada(self)
 
     def actualizar_carta(self, nueva_carta, ruta_local):
@@ -185,8 +185,8 @@ class CardJitsu(App):
         self.mano_ia.remove(carta_ia)
 
         resultado = copia.determinar_ganador(carta_user, carta_ia, self.victorias)
-        print(f'Resultado: {resultado}')
-        print(f'Carta IA: Color={carta_ia.color}, Número={carta_ia.numero}, Elemento={carta_ia.elemento}')
+        # print(f'Resultado: {resultado}')
+        # print(f'Carta IA: Color={carta_ia.color}, Número={carta_ia.numero}, Elemento={carta_ia.elemento}')
 
         # Añadir la acción y el resultado al historial
         self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
@@ -199,8 +199,7 @@ class CardJitsu(App):
 
         # Verificar condiciones de victoria
         ganador, victoria = copia.verificar_condicion_victoria(self.victorias)
-        if True:
-            print(ganador)
+        if ganador:
             self.mostrar_ganador(ganador, victoria)
             return  # Salir del método si hay un ganador
 
