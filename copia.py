@@ -127,66 +127,66 @@ def entrenar_ia(episodios=1000):
 
 
 def main():
-    # entrenar_ia(episodios=10000)
-    inicializar_Q()
-    cartas = cargar_cartas()
-    cartas_user, cartas_ia = asignar_cartas(cartas)
-    mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
-    mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
+    entrenar_ia(episodios=10000)
+    # inicializar_Q()
+    # cartas = cargar_cartas()
+    # cartas_user, cartas_ia = asignar_cartas(cartas)
+    # mano_user, mazo_user = seleccionar_cartas_mano(cartas_user)
+    # mano_ia, mazo_ia = seleccionar_cartas_mano(cartas_ia)
     
-    victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
-    historial_acciones = []
-    turno = 0
+    # victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
+    # historial_acciones = []
+    # turno = 0
 
-    while True:
-        turno += 1
-        print(f"\nTurno {turno}")
-        print("Mano IA")
-        mostrar_cartas(mano_ia)
-        print("\n")
-        mostrar_cartas(mano_user)
-        eleccion_user = int(input("Elige una carta (1-5): ")) - 1
-        carta_user = mano_user.pop(eleccion_user)
-        # historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
+    # while True:
+    #     turno += 1
+    #     print(f"\nTurno {turno}")
+    #     print("Mano IA")
+    #     mostrar_cartas(mano_ia)
+    #     print("\n")
+    #     mostrar_cartas(mano_user)
+    #     eleccion_user = int(input("Elige una carta (1-5): ")) - 1
+    #     carta_user = mano_user.pop(eleccion_user)
+    #     # historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
 
 
-        estado_actual = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
-        eleccion_ia = select_action(estado_actual, mano_ia)
-        carta_ia = mano_ia.pop(mano_ia.index(eleccion_ia))
-        # historial_acciones.append(('IA', carta_ia.elemento, carta_ia.numero))
+    #     estado_actual = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
+    #     eleccion_ia = select_action(estado_actual, mano_ia)
+    #     carta_ia = mano_ia.pop(mano_ia.index(eleccion_ia))
+    #     # historial_acciones.append(('IA', carta_ia.elemento, carta_ia.numero))
         
-        print(f"\nUsuario: {carta_user}")
-        print(f"IA: {carta_ia}")
+    #     print(f"\nUsuario: {carta_user}")
+    #     print(f"IA: {carta_ia}")
 
-        resultado = determinar_ganador(carta_user, carta_ia, victorias)
-        historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
-        if resultado == "Empate":
-            print(resultado)
-            recompensa = reward(False, False)
-        else:
-            print(f"Victoria para: {resultado}")
-            recompensa = reward(resultado == "User", resultado == "IA")
+    #     resultado = determinar_ganador(carta_user, carta_ia, victorias)
+    #     historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
+    #     if resultado == "Empate":
+    #         print(resultado)
+    #         recompensa = reward(False, False)
+    #     else:
+    #         print(f"Victoria para: {resultado}")
+    #         recompensa = reward(resultado == "User", resultado == "IA")
                 
-        estado_siguiente = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
-        update_Q(estado_actual, eleccion_ia, recompensa, estado_siguiente, mano_ia)
+    #     estado_siguiente = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
+    #     update_Q(estado_actual, eleccion_ia, recompensa, estado_siguiente, mano_ia)
 
-        mostrar_victorias(victorias)         
+    #     mostrar_victorias(victorias)         
         
-        ganador, victoria = verificar_condicion_victoria(victorias)
-        if ganador:
-            print(f"\n{ganador} ha ganado el juego!")
-            print(victoria)
-            guardar_q_table()
-            break
+    #     ganador, victoria = verificar_condicion_victoria(victorias)
+    #     if ganador:
+    #         print(f"\n{ganador} ha ganado el juego!")
+    #         print(victoria)
+    #         guardar_q_table()
+    #         break
 
-        if mazo_user and mazo_ia:
-            nueva_carta_user = random.choice(mazo_user)
-            mazo_user.remove(nueva_carta_user)
-            mano_user.append(nueva_carta_user)
+    #     if mazo_user and mazo_ia:
+    #         nueva_carta_user = random.choice(mazo_user)
+    #         mazo_user.remove(nueva_carta_user)
+    #         mano_user.append(nueva_carta_user)
 
-            nueva_carta_ia = random.choice(mazo_ia)
-            mazo_ia.remove(nueva_carta_ia)
-            mano_ia.append(nueva_carta_ia)
+    #         nueva_carta_ia = random.choice(mazo_ia)
+    #         mazo_ia.remove(nueva_carta_ia)
+    #         mano_ia.append(nueva_carta_ia)
 
 if __name__ == "__main__":
     main()
