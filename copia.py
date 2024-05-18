@@ -64,13 +64,18 @@ def verificar_condicion_victoria(victorias):
                         
     return None, None
 
-
 def mostrar_victorias(victorias):
     """Muestra el registro actual de victorias."""
     for jugador, elementos in victorias.items():
         print(f"Victorias de {jugador}:")
         for elemento, colores in elementos.items():
             print(f"  {elemento.capitalize()}: {colores}")
+
+def obtener_rutas_imagenes(mano):
+    """Obtiene las rutas de las imágenes de las cartas en la mano."""
+    print(carta.image for carta in mano)
+
+    return [carta.image for carta in mano]
 
 def entrenar_ia(episodios=1000):
     inicializar_Q()  # Cargar la tabla Q existente o inicializar una nueva
