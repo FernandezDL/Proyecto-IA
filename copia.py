@@ -73,7 +73,7 @@ def mostrar_victorias(victorias):
             print(f"  {elemento.capitalize()}: {colores}")
 
 def entrenar_ia(episodios=1000):
-    inicializar_Q()
+    inicializar_Q()  # Cargar la tabla Q existente o inicializar una nueva
     for episodio in range(episodios):
         cartas = cargar_cartas()
         cartas_user, cartas_ia = asignar_cartas(cartas)
@@ -88,20 +88,23 @@ def entrenar_ia(episodios=1000):
             turno += 1
             eleccion_user = random.randint(0, len(mano_user) - 1)  # Selección aleatoria del usuario
             carta_user = mano_user.pop(eleccion_user)
-            historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
-
-            estado_actual = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
+            
+            estado_actual = get_state(victorias, mano_ia, mazo_user, mazo_ia, historial_acciones)
             eleccion_ia = select_action(estado_actual, mano_ia)
             carta_ia = mano_ia.pop(mano_ia.index(eleccion_ia))
-            historial_acciones.append(('IA', carta_ia.elemento, carta_ia.numero))
-            
+
+            # Determinar el ganador y actualizar las victorias
             resultado = determinar_ganador(carta_user, carta_ia, victorias)
+
+            # Añadir la acción y el resultado al historial
+            historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
+
             if resultado == "Empate":
                 recompensa = reward(False, False)
             else:
                 recompensa = reward(resultado == "User", resultado == "IA")
 
-            estado_siguiente = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
+            estado_siguiente = get_state(victorias, mano_ia, mazo_user, mazo_ia, historial_acciones)
             update_Q(estado_actual, eleccion_ia, recompensa, estado_siguiente, mano_ia)
 
             ganador, victoria = verificar_condicion_victoria(victorias)
@@ -121,6 +124,7 @@ def entrenar_ia(episodios=1000):
             print(f"Episodio {episodio} completado")
 
     guardar_q_table()
+
 
 def main():
     # entrenar_ia(episodios=10000)
@@ -143,18 +147,19 @@ def main():
         mostrar_cartas(mano_user)
         eleccion_user = int(input("Elige una carta (1-5): ")) - 1
         carta_user = mano_user.pop(eleccion_user)
-        historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
+        # historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
 
 
         estado_actual = get_state(victorias, mano_ia, mazo_user, mazo_ia, tuple(historial_acciones))
         eleccion_ia = select_action(estado_actual, mano_ia)
         carta_ia = mano_ia.pop(mano_ia.index(eleccion_ia))
-        historial_acciones.append(('IA', carta_ia.elemento, carta_ia.numero))
+        # historial_acciones.append(('IA', carta_ia.elemento, carta_ia.numero))
         
         print(f"\nUsuario: {carta_user}")
         print(f"IA: {carta_ia}")
 
         resultado = determinar_ganador(carta_user, carta_ia, victorias)
+        historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
         if resultado == "Empate":
             print(resultado)
             recompensa = reward(False, False)

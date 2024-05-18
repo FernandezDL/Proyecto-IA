@@ -21,11 +21,24 @@ def guardar_q_table():
 
 # Función obtener estado
 def get_state(victorias, mano_ia, mazo_user, mazo_ia, historial_acciones):
-    estado_ia = tuple((elemento, tuple(victorias["IA"][elemento])) for elemento in ['Fuego', 'Agua', 'Nieve'])
-    estado_user = tuple((elemento, tuple(victorias["User"][elemento])) for elemento in ['Fuego', 'Agua', 'Nieve'])
-    cartas = tuple(sorted((carta.elemento, carta.numero) for carta in mano_ia))
+    # Número de victorias por cada elemento
+    estado_victorias_ia = tuple(len(victorias["IA"][elemento]) for elemento in ['Fuego', 'Agua', 'Nieve'])
+    estado_victorias_user = tuple(len(victorias["User"][elemento]) for elemento in ['Fuego', 'Agua', 'Nieve'])
+    
+    # Número de cartas de cada elemento en la mano de la IA
+    conteo_cartas_ia = {'Fuego': 0, 'Agua': 0, 'Nieve': 0}
+    for carta in mano_ia:
+        conteo_cartas_ia[carta.elemento] += 1
+    estado_cartas_ia = (conteo_cartas_ia['Fuego'], conteo_cartas_ia['Agua'], conteo_cartas_ia['Nieve'])
+    
+    # Número total de cartas restantes en los mazos de ambos jugadores
     num_cartas_restantes = (len(mazo_user), len(mazo_ia))
-    return estado_ia + estado_user + cartas + num_cartas_restantes + historial_acciones
+    
+    # Resumen del historial de acciones recientes (por ejemplo, las últimas 3 acciones)
+    resumen_historial = tuple(historial_acciones[-3:])
+
+    # Combinar toda la información relevante en el estado simplificado
+    return estado_victorias_ia + estado_victorias_user + estado_cartas_ia + num_cartas_restantes + resumen_historial
 
 
 
