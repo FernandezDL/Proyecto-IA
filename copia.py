@@ -141,7 +141,7 @@ def main():
         mostrar_cartas(mano_ia)
         print("\n")
         mostrar_cartas(mano_user)
-        eleccion_user = int(input("Elige una carta (1-5): ")) - 1
+        eleccion_user = 5 - 1
         carta_user = mano_user.pop(eleccion_user)
         historial_acciones.append(('User', carta_user.elemento, carta_user.numero))
 
