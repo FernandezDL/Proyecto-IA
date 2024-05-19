@@ -16,7 +16,7 @@ from kivy.graphics import Color, Rectangle, RoundedRectangle
 from kivy.core.window import Window
 import copia
 from asignarCartas import cargar_cartas
-from Qlearning import get_state, select_action
+from Qlearning import get_state, select_action, update_Q, reward, inicializar_Q, guardar_q_table
 
 class CartaImage(ButtonBehavior, RelativeLayout):
     def __init__(self, carta, app, **kwargs):
@@ -41,7 +41,7 @@ class CartaImage(ButtonBehavior, RelativeLayout):
         self.add_widget(self.elemento_img)
 
     def on_press(self):
-        # print(f'Carta: Color={self.carta.color}, Número={self.carta.numero}, Elemento={self.carta.elemento}')
+        print(f'Carta: Color={self.carta.color}, Número={self.carta.numero}, Elemento={self.carta.elemento}')
         self.app.carta_seleccionada(self)
 
     def actualizar_carta(self, nueva_carta, ruta_local):
@@ -63,6 +63,7 @@ class CartaImage(ButtonBehavior, RelativeLayout):
 
 class CardJitsu(App):
     def build(self):
+        inicializar_Q()
         self.victorias = {"User": {"Fuego": [], "Agua": [], "Nieve": []}, "IA": {"Fuego": [], "Agua": [], "Nieve": []}}
         self.historial_acciones = []  # Agregar historial de acciones
         self.layout = FloatLayout()
@@ -128,7 +129,7 @@ class CardJitsu(App):
         mazo = cargar_cartas()  # Cargar el mazo de cartas
         self.mazo = mazo
         self.mano, mazo = copia.seleccionar_cartas_mano(mazo)  # Seleccionar 5 cartas para la mano
-        self.mano_ia, mazo_ia = copia.seleccionar_cartas_mano(mazo)  # Seleccionar 5 cartas para la IA
+        self.mano_ia, self.mazo_ia = copia.seleccionar_cartas_mano(mazo)  # Seleccionar 5 cartas para la IA
         rutas_imagenes = copia.obtener_rutas_imagenes(self.mano)  # Obtener las rutas de las imágenes de las cartas
 
         # Crear un directorio temporal para las imágenes descargadas
@@ -185,8 +186,15 @@ class CardJitsu(App):
         self.mano_ia.remove(carta_ia)
 
         resultado = copia.determinar_ganador(carta_user, carta_ia, self.victorias)
-        # print(f'Resultado: {resultado}')
-        # print(f'Carta IA: Color={carta_ia.color}, Número={carta_ia.numero}, Elemento={carta_ia.elemento}')
+        self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
+
+        if resultado == "Empate":
+            recompensa = reward(False, False)
+        else:
+            recompensa = reward(resultado == "User", resultado == "IA")
+            
+        print(f'Resultado: {resultado}')
+        print(f'Carta IA: Color={carta_ia.color}, Número={carta_ia.numero}, Elemento={carta_ia.elemento}')
 
         # Añadir la acción y el resultado al historial
         self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
@@ -196,6 +204,9 @@ class CardJitsu(App):
 
         # Actualizar insignias
         self.mostrar_insignias()
+
+        estado_siguiente = get_state(self.victorias, self.mano_ia, self.mazo, self.mazo_ia, self.historial_acciones)
+        update_Q(estado_actual, carta_ia, recompensa, estado_siguiente, self.mano_ia)
 
         # Verificar condiciones de victoria
         ganador, victoria = copia.verificar_condicion_victoria(self.victorias)
@@ -216,13 +227,15 @@ class CardJitsu(App):
                 # Actualizar la imagen y la carta en el widget
                 carta_image.actualizar_carta(nueva_carta, ruta_local)
 
-    # Reemplazar la carta seleccionada de la IA con una nueva carta del mazo
+        # Reemplazar la carta seleccionada de la IA con una nueva carta del mazo
         if self.mazo:
             nueva_carta_ia = random.choice(self.mazo)
             self.mazo.remove(nueva_carta_ia)
             self.mano_ia.append(nueva_carta_ia)
 
     def mostrar_ganador(self, ganador, victoria):
+        guardar_q_table() #Guarda resultados de la partida en la memoria de la IA
+
         # Crear un FloatLayout para contener el rectángulo y el botón
         ganador_layout = FloatLayout(size_hint=(None, None), size=(300, 150))
 
