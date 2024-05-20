@@ -19,10 +19,11 @@ from asignarCartas import cargar_cartas
 from Qlearning import get_state, select_action, update_Q, reward, inicializar_Q, guardar_q_table
 
 class CartaImage(ButtonBehavior, RelativeLayout):
-    def __init__(self, carta, app, **kwargs):
+    def __init__(self, carta, app, index, **kwargs):
         super().__init__(**kwargs)
         self.carta = carta
         self.app = app
+        self.index = index
 
         # Imagen de la carta
         self.carta_img = Image(source=carta.image, size_hint=(None, None), size=(100, 150))
@@ -60,6 +61,28 @@ class CartaImage(ButtonBehavior, RelativeLayout):
         # Actualizar el elemento
         self.elemento_img.source = f'images/elements/{nueva_carta.elemento.lower()}.png'
         self.elemento_img.reload()
+
+class CartaGrande(RelativeLayout):
+    def __init__(self, carta, ruta_local, **kwargs):
+        super().__init__(**kwargs)
+        self.size_hint = (None, None)
+        self.size = (200, 300)
+        
+        # Imagen de la carta
+        self.carta_img = Image(source=ruta_local, size_hint=(None, None), size=(200, 300))
+        self.add_widget(self.carta_img)
+
+        # Imagen del marco
+        self.marco_img = Image(source=f'images/frames/{carta.color.lower()}.png', size_hint=(None, None), size=(200, 300))
+        self.add_widget(self.marco_img)
+
+        # Imagen del número
+        self.numero_img = Image(source=f'images/numbers/{carta.numero}.png', size_hint=(None, None), size=(36, 36), pos_hint={'x': 0.05, 'y': 0.72})
+        self.add_widget(self.numero_img)
+
+        # Imagen del elemento
+        self.elemento_img = Image(source=f'images/elements/{carta.elemento.lower()}.png', size_hint=(None, None), size=(44, 44), pos_hint={'x': 0.02, 'y': 0.55})
+        self.add_widget(self.elemento_img)
 
 class CardJitsu(App):
     def build(self):
@@ -143,7 +166,7 @@ class CardJitsu(App):
             nombre_archivo = os.path.join(temp_dir, f'carta_{i}.png')
             ruta_local = self.descargar_imagen(carta.image, nombre_archivo)
             if ruta_local:
-                carta_img = CartaImage(carta=carta, app=self, size_hint=(None, None), size=(100, 150),
+                carta_img = CartaImage(carta=carta, app=self, index=i, size_hint=(None, None), size=(100, 150),
                                        pos_hint={'x': 0.1 + i * 0.15, 'y': 0.05})
                 # Actualizar la fuente de la imagen con la ruta local
                 carta_img.carta_img.source = ruta_local
@@ -177,13 +200,13 @@ class CardJitsu(App):
                 self.insignias_ia[elemento].add_widget(insignia)
 
     def carta_seleccionada(self, carta_image):
-        carta_user = carta_image.carta
-        self.mano.remove(carta_user)
-
         # Selección de acción (carta) para la IA usando Q-learning
         estado_actual = get_state(self.victorias, self.mano_ia, self.mazo, [], self.historial_acciones)
         carta_ia = select_action(estado_actual, self.mano_ia)
         self.mano_ia.remove(carta_ia)
+
+        carta_user = carta_image.carta
+        self.mano.remove(carta_user)
 
         resultado = copia.determinar_ganador(carta_user, carta_ia, self.victorias)
         self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
@@ -195,6 +218,36 @@ class CardJitsu(App):
             
         print(f'Resultado: {resultado}')
         print(f'Carta IA: Color={carta_ia.color}, Número={carta_ia.numero}, Elemento={carta_ia.elemento}')
+
+        # Mostrar las cartas seleccionadas en grande
+        indice_carta_user = carta_image.index
+        self.mostrar_cartas_seleccionadas(indice_carta_user, carta_user, carta_ia)
+
+        # Programar la actualización de insignias después de 4 segundos
+        Clock.schedule_once(lambda dt: self.actualizar_despues_de_mostrar(carta_image, carta_user, carta_ia, resultado, recompensa, estado_actual), 4)
+
+    def mostrar_cartas_seleccionadas(self, indice_carta_user, carta_user, carta_ia):
+        nombre_archivo_ia = os.path.join('temp_images', 'carta_ia_5.png')
+        ruta_local_ia = self.descargar_imagen(carta_ia.image, nombre_archivo_ia)
+        
+        # Verificar si la imagen se descargó correctamente
+        if ruta_local_ia:
+            self.cartas_seleccionadas_layout = FloatLayout(size_hint=(None, None), size=(Window.width, Window.height))
+            
+            # Mostrar la carta de la IA a la izquierda
+            carta_ia_grande = CartaGrande(carta=carta_ia, ruta_local=ruta_local_ia, pos_hint={'center_x': 0.3, 'center_y': 0.5})
+            self.cartas_seleccionadas_layout.add_widget(carta_ia_grande)
+
+            # Mostrar la carta del usuario a la derecha
+            ruta_local_user = f'temp_images/carta_{indice_carta_user}.png'
+            carta_user_grande = CartaGrande(carta=carta_user, ruta_local=ruta_local_user, pos_hint={'center_x': 0.7, 'center_y': 0.5})
+            self.cartas_seleccionadas_layout.add_widget(carta_user_grande)
+
+            self.layout.add_widget(self.cartas_seleccionadas_layout)
+
+    def actualizar_despues_de_mostrar(self, carta_image, carta_user, carta_ia, resultado, recompensa, estado_actual):
+        # Eliminar las cartas mostradas en grande
+        self.layout.remove_widget(self.cartas_seleccionadas_layout)
 
         # Añadir la acción y el resultado al historial
         self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
@@ -228,13 +281,13 @@ class CardJitsu(App):
                 carta_image.actualizar_carta(nueva_carta, ruta_local)
 
         # Reemplazar la carta seleccionada de la IA con una nueva carta del mazo
-        if self.mazo:
-            nueva_carta_ia = random.choice(self.mazo)
-            self.mazo.remove(nueva_carta_ia)
+        if self.mazo_ia:
+            nueva_carta_ia = random.choice(self.mazo_ia)
+            self.mazo_ia.remove(nueva_carta_ia)
             self.mano_ia.append(nueva_carta_ia)
 
     def mostrar_ganador(self, ganador, victoria):
-        guardar_q_table() #Guarda resultados de la partida en la memoria de la IA
+        guardar_q_table()  # Guarda resultados de la partida en la memoria de la IA
 
         # Crear un FloatLayout para contener el rectángulo y el botón
         ganador_layout = FloatLayout(size_hint=(None, None), size=(300, 150))
@@ -243,7 +296,7 @@ class CardJitsu(App):
         window_width, window_height = Window.size
         # Calcular la posición para centrar el layout
         layout_x = (window_width - 300) / 2
-        layout_x2= (window_width - 180) / 2
+        layout_x2 = (window_width - 180) / 2
         layout_y = (window_height - 150) / 2
         layout_y2 = (window_height - 90) / 2
 
@@ -263,7 +316,7 @@ class CardJitsu(App):
         ganador_layout.add_widget(label2)
 
         button = Button(pos=(layout_x2, layout_y2), size_hint=(None, None), size=(180, 50),
-                    background_color=(0, 0, 0, 0))  # Fondo transparente
+                        background_color=(0, 0, 0, 0))  # Fondo transparente
         button.bind(on_press=App.get_running_app().stop)  # Enlazar el evento on_press para cerrar la aplicación
         ganador_layout.add_widget(button)
 
