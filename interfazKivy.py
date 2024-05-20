@@ -96,10 +96,12 @@ class CardJitsu(App):
         self.layout.add_widget(bg_image)
 
         # -------------------- Musica --------------------
-        # self.sound = SoundLoader.load('music/cardJitsu.mp3')
-        # if self.sound:
-        #     self.sound.loop = True  # Hace que la música se repita continuamente
-        #     self.sound.play()
+        self.sound = SoundLoader.load('music/cardJitsu.mp3')
+        self.soundFinal = SoundLoader.load('music/final.mp3')
+
+        if self.sound:
+            self.sound.loop = True  # Hace que la música se repita continuamente
+            self.sound.play()
 
         # -------------------- Animacion de los pinguinos --------------------
         self.img = Image(source='images/pinguinos/pinguinos1.png', allow_stretch=True, keep_ratio=False)
@@ -108,7 +110,6 @@ class CardJitsu(App):
         self.images = [f'images/pinguinos/pinguinos{i}.png' for i in range(1, 8)]
         self.current_index = 0
 
-        # Cambio de imagen
         Clock.schedule_interval(self.next_image, 0.3)
 
         # -------------------- Mostrar Cartas --------------------
@@ -135,8 +136,6 @@ class CardJitsu(App):
 
     def next_image(self, dt):
         self.current_index = (self.current_index + 1) % len(self.images)
-        
-        # Cambiar la imagen
         self.img.source = self.images[self.current_index]
 
     def descargar_imagen(self, url, nombre_archivo):
@@ -155,7 +154,7 @@ class CardJitsu(App):
         self.mano_ia, self.mazo_ia = copia.seleccionar_cartas_mano(mazo)  # Seleccionar 5 cartas para la IA
         rutas_imagenes = copia.obtener_rutas_imagenes(self.mano)  # Obtener las rutas de las imágenes de las cartas
 
-        # Crear un directorio temporal para las imágenes descargadas
+        #Directorio temporal para las imágenes descargadas
         temp_dir = 'temp_images'
         os.makedirs(temp_dir, exist_ok=True)
 
@@ -249,14 +248,9 @@ class CardJitsu(App):
         # Eliminar las cartas mostradas en grande
         self.layout.remove_widget(self.cartas_seleccionadas_layout)
 
-        # Añadir la acción y el resultado al historial
-        self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado))
-
-        # Imprimir las victorias actualizadas
-        copia.mostrar_victorias(self.victorias)
-
-        # Actualizar insignias
-        self.mostrar_insignias()
+        self.historial_acciones.append((carta_user.elemento, carta_ia.elemento, resultado)) # Añadir la acción y el resultado al historial
+        copia.mostrar_victorias(self.victorias) # Imprimir las victorias actualizadas
+        self.mostrar_insignias() # Actualizar insignias
 
         estado_siguiente = get_state(self.victorias, self.mano_ia, self.mazo, self.mazo_ia, self.historial_acciones)
         update_Q(estado_actual, carta_ia, recompensa, estado_siguiente, self.mano_ia)
@@ -288,6 +282,14 @@ class CardJitsu(App):
 
     def mostrar_ganador(self, ganador, victoria):
         guardar_q_table()  # Guarda resultados de la partida en la memoria de la IA
+
+        # Detener la música de fondo
+        if self.sound:
+            self.sound.stop()
+
+        # Reproducir la música final
+        if self.soundFinal:
+            self.soundFinal.play()
 
         # Crear un FloatLayout para contener el rectángulo y el botón
         ganador_layout = FloatLayout(size_hint=(None, None), size=(300, 150))
